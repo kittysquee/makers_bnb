@@ -36,10 +36,9 @@ class PoochPads < Sinatra::Base
   end
 
   get '/pads/confirmation' do
-
-    pad = Pad.first(id: session[:pad_id])
-    pad.switch_availability
-    pad.save
+    @confirmed_pad = Pad.first(id: session[:pad_id])
+    @confirmed_pad.switch_availability
+    @confirmed_pad.save
     erb :'pads/confirmation'
   end
 
