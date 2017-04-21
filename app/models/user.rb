@@ -6,6 +6,7 @@ class User
   attr_accessor :password_confirmation
 
   has n, :pads
+  has n, :bookings
 
   property :id, Serial
   property :email, String, format: :email_address, required: true, unique: true

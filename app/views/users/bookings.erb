@@ -1,0 +1,18 @@
+
+
+<% unless current_user.bookings == [] %>
+<ul id="bookings">
+  <% current_user.bookings.each do |booking| %>
+    <li>
+      <%= booking.date %>
+    </li>
+  <% end %>
+</ul>
+<% else %>
+  You have no bookings
+    <form action="/pads" method='get'>
+      <button type='submit' value='View Pads'>
+        View Pads
+      </button>
+    </form>
+<% end %>

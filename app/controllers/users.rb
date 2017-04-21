@@ -20,4 +20,11 @@ class PoochPads < Sinatra::Base
   get '/users/kennel' do
     erb :'/users/kennel'
   end
+
+  get '/users/bookings' do
+    erb :'/users/bookings'
+  end
+
+
+
 end
