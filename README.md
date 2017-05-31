@@ -1,4 +1,5 @@
 # Pooch Pads
+[![Build Status](https://travis-ci.org/kittysquee/poochpads.svg?branch=master)](https://travis-ci.org/kittysquee/poochpads)
 
 ## Collaborators
 * [Naz Malik](https://github.com/nazwhale)
